@@ -83,7 +83,7 @@ class SearchBar extends Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:5000/get_jobs",
+    fetch("https://promoted-backend-server.herokuapp.com/get_jobs",
           {
             method: 'GET',
             headers: {

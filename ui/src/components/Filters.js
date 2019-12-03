@@ -143,7 +143,7 @@ class Filters extends Component {
   }
 
   componentDidMount() {
-    let url = 'http://localhost:5000/get_courses?job_title=' + (this.props.location.query.includes("Senior")? this.props.location.query.substring(7) : this.props.location.query);
+    let url = 'https://promoted-backend-server.herokuapp.com/get_courses?job_title=' + (this.props.location.query.includes("Senior")? this.props.location.query.substring(7) : this.props.location.query);
 
     fetch(url, {
                 method: 'GET',
