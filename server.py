@@ -33,5 +33,10 @@ def get_jobs():
 
     return jsonify(jobs), 200
 
+@app.route('/', methods=["GET"])
+def home_screen():
+    response = ["You've reached the backend server for PromotEd. Please visit our Home Page at https://promoted.herokuapp.com/"]
+    return jsonify(response), 200
+
 if __name__ == "__main__":
     app.run(debug=False)
